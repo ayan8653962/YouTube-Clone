@@ -148,4 +148,10 @@ grid-row-gap: 5px;
   color: black;
   font-weight: 600;
 }
-
+.section2 img{
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  height: 30px;
+  margin-left: 20px;
+}

@@ -115,7 +115,7 @@
   color: white !important;
   background-color: black !important;
 }
-.parent div {
+.parent article {
   width: 100%;
   height: auto;
   max-width: 600px;
@@ -132,100 +132,117 @@
   color: black;
   font-weight: 600;
 }
-
- @media (min-width: 1200px) {
-  .parent {
-   display: grid;
-   grid-template-columns: repeat(3 , 1fr);
-   grid-template-rows: repeat(2 , 1fr);
-   grid-gap: 5px;
-  } 
-} 
-
 @media (max-width: 576px) {
   .parent {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
-@media (min-width: 577px) {
-.parent{
+@media (min-width: 577px) and (max-width: 1199px){
+  .parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+}
+@media (min-width: 1200px) {
+ .parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-}
-}
-.section2 img{
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+  grid-gap: 5px;
+ } 
+} 
+.section2 img {
   width: 100%;
   height: auto;
   max-width: 80px;
   height: 30px;
   margin: 10px 0px 10px 30px;
 }
-@media (min-width: 1024px) {
-.parent2 {
-  display: flex;
-  overflow: hidden;
-  padding: 0px 10px;
-}   
-
-.parent2 div {
+.parent2 figure {
   width: 100%;
   height: auto;
   background-color: white !important;
   max-width: 400px;
-  margin: 10px 10px 0px 10px ;
+  margin: 10px 5px 0px 5px ;
   gap: 10px;
 }
 .parent2 iframe { 
-  margin: 0px;
   width: 100%;
-  margin: 0px;
   border-radius: 15px;
   height: auto;
-  max-width: 400px !important;
+  max-width: 400px;
   justify-content: center;
-  height: 300px;
-
+  height: 400px;
 }
-}
-@media (max-width: 787px) {
+@media  (min-width: 1px) and (max-width: 696px) {
   .parent2 {
     width: 100%;
     height: auto;
     display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     grid-template-columns: repeat(2 , 1fr);
-    grid-template-rows: repeat(2 , 1fr);
-    overflow: hidden;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    /* overflow: hidden; */
     padding: 0px 12px;
-  }
-  .parent2 div {
-    border-radius: 10px;     
-    max-width: 170px;
-    height: 250px;
-    padding: 0px 10px;
-  }
-  .section2 img{
-    margin: 0px 0px 10px 25px;
-  }
-  .parent2 iframe {
-    width: 170px;
-    height: 250px;
-    border-radius: 10px;
-    margin: 0px;
-  } 
-.ifram5 {
-  display: none;
+} 
+   .ifram3 {
+    display: none;
+} 
+  .ifram4 {
+    display: none;
+}
+  .ifram5 {
+    display: none;
 }
 .ifram6 {
   display: none;
 }
-
 }
+@media  (min-width: 700px) and (max-width: 950px) {
+  .parent2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 0px 12px;
+} 
+   .ifram4 {
+    display: none;
+}
+  .ifram5 {
+    display: none;
+}
+.ifram6 {
+  display: none;
+}
+}
+@media  (min-width: 950px) and (max-width: 1124px) {
+  .parent2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 0px 12px;
+} 
+.ifram6 {
+  display: none;
+}
+}
+@media (min-width: 1125px) {
+.parent2 {
+  display: flex;
+  overflow: hidden;
+  padding: 0px 10px;
+ }
+}   
 
 
 

@@ -111,7 +111,7 @@
 .links a:hover{
   cursor: pointer;
 }
-.links a:active{
+.links a:focus {
   color: white !important;
   background-color: black !important;
 }
@@ -189,7 +189,6 @@
     grid-template-columns: repeat(2 , 1fr);
     grid-template-rows: 1fr;
     grid-gap: 10px;
-    /* overflow: hidden; */
     padding: 0px 12px;
 } 
    .ifram3 {
@@ -245,6 +244,9 @@
   overflow: hidden;
   padding: 0px 10px;
  }
+.parent {
+  margin: 0px 10px !important;
+}
 }   
 
 

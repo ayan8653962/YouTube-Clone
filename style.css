@@ -115,6 +115,9 @@
   color: white !important;
   background-color: black !important;
 }
+.parent{
+  margin-top: 15px;
+}
 .parent article {
   width: 100%;
   height: auto;
@@ -176,7 +179,7 @@
   height: auto;
   max-width: 400px;
   justify-content: center;
-  height: 400px;
+  height: 250px;
 }
 @media  (min-width: 1px) and (max-width: 696px) {
   .parent2 {

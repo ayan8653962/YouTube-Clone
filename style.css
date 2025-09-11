@@ -115,52 +115,62 @@
   color: white !important;
   background-color: black !important;
 }
-.parent {
-  margin: 10px 10px 0px 10px;
-display: grid;
-/* margin-bottom: 0px !important; */
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 5px;
-grid-row-gap: 5px;
+.parent div {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  height: 300px;
+}
+.parent iframe {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  height: 230px;
+}
+.parent p {
+  color: black;
+  font-weight: 600;
 }
 
-@media (max-width:786px) {
+ @media (min-width: 1200px) {
+  .parent {
+   display: grid;
+   grid-template-columns: repeat(3 , 1fr);
+   grid-template-rows: repeat(2 , 1fr);
+   grid-gap: 5px;
+  } 
+} 
+
+@media (max-width: 576px) {
   .parent {
    display: flex;
    flex-direction: column;
   }
 }
-.parent div {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  max-height: 500px;
+@media (min-width: 577px) {
+.parent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
-.parent iframe {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  border-radius: 10px;
-  height: 200px;
-}
-.parent p {
-  color: black;
-  font-weight: 600;
 }
 .section2 img{
   width: 100%;
   height: auto;
   max-width: 80px;
   height: 30px;
-  margin-left: 20px;
+  margin: 10px 0px 10px 30px;
 }
-@media (min-width: 786px) {
+@media (min-width: 1024px) {
 .parent2 {
   display: flex;
   overflow: hidden;
   padding: 0px 10px;
 }   
+
 .parent2 div {
   width: 100%;
   height: auto;
@@ -175,7 +185,7 @@ grid-row-gap: 5px;
   margin: 0px;
   border-radius: 15px;
   height: auto;
-  max-width: 400px;
+  max-width: 400px !important;
   justify-content: center;
   height: 300px;
 
@@ -209,10 +219,10 @@ grid-row-gap: 5px;
     margin: 0px;
   } 
 .ifram5 {
-  display: hidden;
+  display: none;
 }
 .ifram6 {
-  display: hidden;
+  display: none;
 }
 
 }
